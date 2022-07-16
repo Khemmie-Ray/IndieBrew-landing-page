@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+/* ===========================
+        Typography
+============================*/
+
+a {
+    text-decoration: none;
+    margin-left: 1em;
+    color: black;
+}
+
+.btn {
+    background-color: rgb(75, 75, 213);
+    color: white;
+    padding: .8em 1.8em;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: rgba(233, 215, 232, 0.698);
+    color: black;
+}
+
+.nav {
+    padding: 2em 0;
+}
+
+h1 {
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+}
+
+h1, .text-bg, h3,
+h2, .resource-link,
+.boldText, label {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3, .boldText {
+    font-size: 1.2rem;
+}
+
+p {
+    color: grey;
+}
+
+.resource-link {
+    margin-left: 0;
+    color: rgb(75, 75, 213);
+}
+
+.boldText {
+    letter-spacing: 1px;
+}
+
+.sub {
+    margin-bottom: 1.5em;
+}
+
+.account-wrapper p, label {
+    color: black;
+}
+
+.logoLink {
+    margin-left: 0;
+}
+
+input::placeholder {
+    font-size: .9rem;
+    color: gray;
+    padding-left: 1em;
+}
+
+/* ============================
+            Layout
+============================ */
+
+.user {
+    display: block;
+    margin-bottom: 1em;
+}
+
+main {
+    margin-top: 5em;
+}
+
+.logo {
+    width: 79%;
+}
+
+.nav-home {
+    width: 21%;
+    padding: 0;
+}
+
+.account-info {
+    gap: 5%;
+    padding: 2em 0 4em;
+}
+
+.mobileNav  {
+    display: none;
+}
+
+.navlist {
+    padding: 0;
+}
+
+.hero-content,
+.access-content,
+.top {
+    align-self: center;
+}
+
+.hero-content .btn {
+    margin: .5em 0 1em;
+}
+
+.text-bg {
+    color: rgb(75, 75, 213);
+}
+
+.hero-info {
+    margin-top: 8em;
+}
+
+.arrow-img {
+    width: 3%;
+}
+
+.access-info {
+    margin: 4em 0;
+}
+
+.footlinks {
+    cursor: pointer;
+}
+
+.footerLink {
+    width: 80%;
+}
+
+
+.footnote p {
+    width: 70%;
+}
+
+.account-wrapper {
+    background-color: rgba(233, 215, 232, 0.698);
+}
+
+.back-arrow {
+    background-color: white;
+    padding: .8em 1em;
+    margin-right: .8em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.top p {
+    margin: 1.5em 0;
+}
+
+.formBg {
+    background-color: white;
+    border-radius: 20px;
+    width: 50%;
+    padding: 4em;
+}
+
+.top {
+    width: 45%;
+}
+
+label {
+    width: 100%;
+}
+
+.terms-info {
+    display: flex;
+    padding: .5em 0;
+}
+
+.terms {
+    margin-left: 0;
+    color: rgb(75, 75, 213);
+    text-decoration: underline;
+}
+
+.terms-p {
+    margin-left: 1em;
+    align-self: center;
+}
+
+input {
+    margin: 1em 0;
+    border:  1px solid gray;
+    border-radius: 5px;
+}
+
+.social-icons {
+    width: 80%;
+    float: right;
+}
+
+.checker {
+    width: 50px;
+    height: 50px;
+}
+
+.access-info {
+    gap: 5%;
+}
+
+.access-content {
+    width: 45%;
+}
+
+.footNav {
+    display: flex;
+}
+
+/* ============================
+        Media Query
+============================ */
+
+@media (max-width: 600px) {
+    .account-wrapper {
+        padding: 1.5em;
+    }
+
+    .formBg, .top,
+    .access-content, 
+    .social-icons, 
+    .footnote, 
+    .footnote p, 
+    .footerLink {
+        width: 100%;
+    }
+
+    .formBg {
+        padding: 3em 1.5em;
+    }
+
+    .boldText, 
+    .upperNav {
+        display: none;
+    }
+
+    .top, .hero {
+        margin-bottom: 1em;
+    }
+
+    .hero-content, 
+    .resource-info {
+        order: 2;
+    }
+
+    .access-content {
+        order: 1;
+    }
+
+    .hero-info {
+        margin-top: 1.5em;
+    }
+
+    .main-info {
+        width: 90%;
+        padding: 1em 2em;
+    }
+
+    .access-content {
+        margin-top: 2em;
+    }
+
+    header, .footnote {
+        padding: 1em;
+    }
+
+    .social-icons {
+        margin-bottom: 3em;
+    }
+    .footNav {
+        flex-direction: column;
+    }
+
+    .footerLink {
+        margin: 0 auto;
+    }
+
+   .footlinks {
+        text-align: end;
+   }
+
+   .footlinks:first-child,
+   .footlinks:nth-child(3) {
+        text-align: start;
+   }
+
+   .logo, .mobileNav,
+   .footlinks {
+    width: 50%;
+   }
+
+   .logo {
+        margin-top: .5em;
+   }
+
+   .mobileNav, 
+   .navbar-collapse a {
+        display: block;
+   }
+
+   .navbar-toggler-icon {
+        position: absolute;
+        right: 10%;
+   }
+
+   .navbar-collapse a {
+        margin: 1em 0;
+   }
+
+   .nav-home {
+        margin-left: 4em;
+   }
+}
+
+@media (min-width: 760px) and (max-width: 920px) {
+    .top, .formBg,
+    .hero, .hero-content {
+        width: 100%;
+    }
+
+    .top {
+        margin-bottom: 2em;
+    }
+
+    .logo, .upperNav,
+    .footernote {
+        width: 60%;
+    }
+
+    .nav-home, .main-logo,
+    .footerLink {
+        width: 40%;
+    }
+
+    .hero-info {
+        flex-direction: column;
+    }
+
+    .hero-content {
+        order: 2;
+        margin-top: 2em;
+    }
+
+    .footlinks {
+        width: 50%;
+    }
+
+    .footnote p {
+        width: 90%;
+    }
+
+    .footlinks:last-child,
+   .footlinks:nth-child(2) {
+        text-align: end;
+   } 
+}

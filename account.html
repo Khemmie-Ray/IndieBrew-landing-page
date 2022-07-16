@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndieBrew Account page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid account-wrapper">
+    <div class="container">
+        <div class="row nav">
+            <div class="col-sm-7 logo">
+            <a href="index.html" class="logoLink"><img src="Assets/Logo.svg" alt="IndieBrew logo"></a>
+        </div>
+        <div class="col-sm-5 nav-home">
+            <a href="index.html"><img src="Assets/Back Arrow.svg" class="back-arrow" alt=""></a>
+            <span class="boldText">Back to homepage</span>
+        </div>
+        </div>
+        <div class="row account-info">
+        <div class="col-6 top">
+            <h2>Create your personalized feed.</h2>
+            <p>🎈 <strong>Over 20 resources.</strong> With resources ranging from Reddit to IndieHackers, we've got all your needs covered.</p>
+            <p>🗞 <strong>Delivered weekly.</strong> Every week at exactly Tuesday 12:00 P.M. EST - expect a value-packed digest right in your email.</p>
+            <p>💡 <strong>Unlimited ideas.</strong> With all the ideas you'll be reading about what's stopping you from creating a sustainable startup?</p>
+        </div>
+        <div class="col-6 formBg">
+            <form action="">
+            <h3 class="sub">Create your IndieBrew Account</h3>
+            <label for="email">Email
+            <input type="email" placeholder="john@example.com" class="w-100 p-2">
+        </label>
+            <label for="fullname">Full Name
+            <input type="text" placeholder="John Doe" class="w-100 p-2">
+        </label>
+        <label for="password">Password
+            <input type="password" placeholder="At least 8 characters" class="w-100 p-2">
+        </label>
+        <div class="terms-info">
+        <input type="checkbox" class="checker"> 
+        <span class="terms-p">By creating an account on IndieBrew, you agree to the <a href="#" class="terms">Terms & Conditions</a>.</span>
+    </div>
+        <button class="btn w-100 acct">Create an Account</button>
+        </form>
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
