@@ -97,17 +97,22 @@ input::placeholder {
     margin-bottom: 1em;
 }
 
+header {
+    background-color: rgba(233, 215, 232, 0.698);
+    padding-bottom: 3em;
+}
+
 main {
     margin-top: 5em;
 }
 
-.logo {
-    width: 79%;
+.nextlogo {
+    width: 71%;
 }
 
 .nav-home {
-    width: 21%;
-    padding: 0;
+    width: 29%;
+    padding: 0 1em;
 }
 
 .account-info {
@@ -156,7 +161,6 @@ main {
 .footerLink {
     width: 80%;
 }
-
 
 .footnote p {
     width: 70%;
@@ -297,6 +301,7 @@ input {
     .social-icons {
         margin-bottom: 3em;
     }
+
     .footNav {
         flex-direction: column;
     }
@@ -352,13 +357,14 @@ input {
         margin-bottom: 2em;
     }
 
-    .logo, .upperNav,
-    .footernote {
+    .footernote,
+    .nextlogo, .navlist {
         width: 60%;
     }
 
-    .nav-home, .main-logo,
-    .footerLink {
+    .nav-home,
+    .footerLink,
+    .logo {
         width: 40%;
     }
 
